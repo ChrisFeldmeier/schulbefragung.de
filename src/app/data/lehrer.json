@@ -1,0 +1,60 @@
+{
+    "resource": [
+        {
+            "leh_LehrerKlasseID": 4475,
+            "leh_LehrerID": 3,
+            "kla_KlasseID": 207,
+            "leh_Name": "Gerg",
+            "leh_Vorname": "Robert"
+        },
+        {
+            "leh_LehrerKlasseID": 4474,
+            "leh_LehrerID": 7,
+            "kla_KlasseID": 207,
+            "leh_Name": "Heider",
+            "leh_Vorname": "Albert"
+        },
+        {
+            "leh_LehrerKlasseID": 4476,
+            "leh_LehrerID": 10,
+            "kla_KlasseID": 207,
+            "leh_Name": "Kaiser",
+            "leh_Vorname": "Regina"
+        },
+        {
+            "leh_LehrerKlasseID": 4471,
+            "leh_LehrerID": 11,
+            "kla_KlasseID": 207,
+            "leh_Name": "Kaiser",
+            "leh_Vorname": "Richard"
+        },
+        {
+            "leh_LehrerKlasseID": 4469,
+            "leh_LehrerID": 13,
+            "kla_KlasseID": 207,
+            "leh_Name": "Maderer",
+            "leh_Vorname": "Josef"
+        },
+        {
+            "leh_LehrerKlasseID": 4470,
+            "leh_LehrerID": 14,
+            "kla_KlasseID": 207,
+            "leh_Name": "Neuhauser",
+            "leh_Vorname": "Adalbert"
+        },
+        {
+            "leh_LehrerKlasseID": 4472,
+            "leh_LehrerID": 15,
+            "kla_KlasseID": 207,
+            "leh_Name": "Pa\u00dfberger",
+            "leh_Vorname": "Markus"
+        },
+        {
+            "leh_LehrerKlasseID": 4473,
+            "leh_LehrerID": 17,
+            "kla_KlasseID": 207,
+            "leh_Name": "Schober",
+            "leh_Vorname": "Christian"
+        }
+    ]
+}
