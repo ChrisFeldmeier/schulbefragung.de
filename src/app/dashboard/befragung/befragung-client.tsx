@@ -57,7 +57,7 @@ interface Abteilung {
 
 interface Answer {
   questionId: number
-  teacherId: number
+  teacherId: number | null
   rating: number
   noAnswer?: boolean
 }
@@ -92,7 +92,16 @@ export default function BefragungClient() {
 
   // Filter questions based on selected class's department
   const questions = allQuestions
-    .filter(q => q.fra_sichtbar) // Only visible questions
+    .filter(q => {
+      // Basic visibility check
+      if (!q.fra_sichtbar) return false
+
+      // Check if the question should be included
+      // frar_FrageArtID: 1 = Allgemeine Fragen (für alle)
+      // frar_FrageArtID: 2 = Lehrerbezogene Fragen
+      // fra_aufAbt_sichtbar: true = Für Abteilungen sichtbar
+      return (q.frar_FrageArtID === 1 || q.frar_FrageArtID === 2) && q.fra_aufAbt_sichtbar
+    })
     .sort((a, b) => a.fra_Nr - b.fra_Nr) // Sort by question number
 
   // Log for debugging
@@ -100,7 +109,10 @@ export default function BefragungClient() {
     if (selectedClass) {
       console.log('Selected Class:', selectedClass)
       console.log('Total Questions:', questions.length)
-      console.log('Questions:', questions)
+      console.log('Questions by Type:', questions.reduce((acc, q) => {
+        acc[q.frar_FrageArtID] = (acc[q.frar_FrageArtID] || 0) + 1
+        return acc
+      }, {} as Record<number, number>))
     }
   }, [selectedClass, questions])
 
@@ -119,7 +131,7 @@ export default function BefragungClient() {
     setAnswers([]) // Reset answers when class changes
   }
 
-  const handleRatingChange = (questionId: number, teacherId: number, rating: number) => {
+  const handleRatingChange = (questionId: number, teacherId: number | null, rating: number) => {
     setAnswers(prev => {
       const existingAnswerIndex = prev.findIndex(
         a => a.questionId === questionId && a.teacherId === teacherId
@@ -139,7 +151,7 @@ export default function BefragungClient() {
     })
   }
 
-  const handleNoAnswer = (questionId: number, teacherId: number) => {
+  const handleNoAnswer = (questionId: number, teacherId: number | null) => {
     setAnswers(prev => {
       const existingAnswerIndex = prev.findIndex(
         a => a.questionId === questionId && a.teacherId === teacherId
@@ -149,7 +161,6 @@ export default function BefragungClient() {
         const newAnswers = [...prev]
         const currentAnswer = newAnswers[existingAnswerIndex]
         
-        // Toggle noAnswer state
         const newNoAnswer = !currentAnswer.noAnswer
         
         newAnswers[existingAnswerIndex] = {
@@ -165,30 +176,48 @@ export default function BefragungClient() {
   }
 
   const handleRandomRatings = () => {
-    classTeachers.forEach(teacher => {
-      // Random rating between 1 and 5
+    if (currentQuestion.frar_FrageArtID === 1) {
+      // For general questions, set one random rating
       const randomRating = Math.floor(Math.random() * 5) + 1
-      handleRatingChange(currentQuestion.fra_FrageID, teacher.leh_LehrerID, randomRating)
-    })
+      handleRatingChange(currentQuestion.fra_FrageID, null, randomRating)
+    } else {
+      // For teacher-specific questions, set random ratings for each teacher
+      classTeachers.forEach(teacher => {
+        const randomRating = Math.floor(Math.random() * 5) + 1
+        handleRatingChange(currentQuestion.fra_FrageID, teacher.leh_LehrerID, randomRating)
+      })
+    }
 
     toast.success('Zufällige Bewertungen gesetzt')
   }
 
-  const getAnswerForQuestionAndTeacher = (questionId: number, teacherId: number) => {
+  const getAnswerForQuestionAndTeacher = (questionId: number, teacherId: number | null) => {
     return answers.find(
       a => a.questionId === questionId && a.teacherId === teacherId
     )
   }
 
   const handleNext = () => {
-    // Check if all teachers are rated for the current question
-    const allAnswered = classTeachers.every(teacher => {
-      const answer = getAnswerForQuestionAndTeacher(currentQuestion.fra_FrageID, teacher.leh_LehrerID)
-      return (answer && answer.rating > 0) || (answer && answer.noAnswer)
-    })
+    let allAnswered = false
+
+    if (currentQuestion.frar_FrageArtID === 1) {
+      // For general questions, check if there's a single answer
+      const answer = getAnswerForQuestionAndTeacher(currentQuestion.fra_FrageID, null)
+      allAnswered = (answer && answer.rating > 0) || (answer && answer.noAnswer)
+    } else {
+      // For teacher questions, check if all teachers are rated
+      allAnswered = classTeachers.every(teacher => {
+        const answer = getAnswerForQuestionAndTeacher(currentQuestion.fra_FrageID, teacher.leh_LehrerID)
+        return (answer && answer.rating > 0) || (answer && answer.noAnswer)
+      })
+    }
 
     if (!allAnswered) {
-      toast.error('Bitte bewerten Sie alle Lehrer für diese Frage oder wählen Sie "Keine Angabe"')
+      toast.error(
+        currentQuestion.frar_FrageArtID === 1
+          ? 'Bitte bewerten Sie diese Frage oder wählen Sie "Keine Angabe"'
+          : 'Bitte bewerten Sie alle Lehrer für diese Frage oder wählen Sie "Keine Angabe"'
+      )
       return
     }
 
@@ -206,6 +235,65 @@ export default function BefragungClient() {
   }
 
   const progress = (currentPage + 1) / totalPages
+
+  // Render the question content based on its type
+  const renderQuestionContent = () => {
+    if (currentQuestion.frar_FrageArtID === 1) {
+      // Render general question with single rating
+      return (
+        <div className="p-4 bg-gray-50 rounded-lg">
+          <div className="flex items-center justify-between">
+            <h4 className="font-medium">Ihre Bewertung</h4>
+            <div className="flex items-center gap-4">
+              <StarRating
+                value={!getAnswerForQuestionAndTeacher(currentQuestion.fra_FrageID, null)?.noAnswer ? 
+                  getAnswerForQuestionAndTeacher(currentQuestion.fra_FrageID, null)?.rating || 0 : 0}
+                onChange={(rating) => handleRatingChange(currentQuestion.fra_FrageID, null, rating)}
+                disabled={getAnswerForQuestionAndTeacher(currentQuestion.fra_FrageID, null)?.noAnswer}
+              />
+              <Button
+                variant={getAnswerForQuestionAndTeacher(currentQuestion.fra_FrageID, null)?.noAnswer ? "default" : "outline"}
+                onClick={() => handleNoAnswer(currentQuestion.fra_FrageID, null)}
+                className="whitespace-nowrap"
+              >
+                Keine Angabe
+              </Button>
+            </div>
+          </div>
+        </div>
+      )
+    }
+
+    // Render teacher-specific question with ratings for each teacher
+    return (
+      <div className="grid gap-6">
+        {classTeachers.map((teacher) => (
+          <div key={teacher.leh_LehrerID} className="p-4 bg-gray-50 rounded-lg">
+            <div className="flex items-center justify-between">
+              <h4 className="font-medium">
+                {teacher.leh_Vorname} {teacher.leh_Name}
+              </h4>
+              <div className="flex items-center gap-4">
+                <StarRating
+                  value={!getAnswerForQuestionAndTeacher(currentQuestion.fra_FrageID, teacher.leh_LehrerID)?.noAnswer ? 
+                    getAnswerForQuestionAndTeacher(currentQuestion.fra_FrageID, teacher.leh_LehrerID)?.rating || 0 : 0}
+                  onChange={(rating) => handleRatingChange(currentQuestion.fra_FrageID, teacher.leh_LehrerID, rating)}
+                  disabled={getAnswerForQuestionAndTeacher(currentQuestion.fra_FrageID, teacher.leh_LehrerID)?.noAnswer}
+                />
+                <Button
+                  variant={getAnswerForQuestionAndTeacher(currentQuestion.fra_FrageID, teacher.leh_LehrerID)?.noAnswer ? "default" : "outline"}
+                  onClick={() => handleNoAnswer(currentQuestion.fra_FrageID, teacher.leh_LehrerID)}
+                  className="whitespace-nowrap"
+                >
+                  Keine Angabe
+                </Button>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    )
+  }
 
   if (currentStep === 'intro') {
     return <IntroPage onStart={handleStart} />
@@ -276,58 +364,33 @@ export default function BefragungClient() {
               <h3 className="text-xl font-medium">
                 Frage {currentPage + 1} von {totalPages}:
               </h3>
-              <Button
-                variant="outline"
-                onClick={handleRandomRatings}
-                className="flex items-center gap-2"
-              >
-                <Dices className="h-4 w-4" />
-                Zufällige Bewertungen
-              </Button>
+              <div className="flex items-center gap-2">
+                <Button
+                  variant="outline"
+                  onClick={handleRandomRatings}
+                  className="flex items-center gap-2"
+                >
+                  <Dices className="h-4 w-4" />
+                  Zufällige Bewertungen
+                </Button>
+                <Button onClick={handleNext}>
+                  {currentPage === totalPages - 1 ? 'Abschließen' : 'Weiter'}
+                </Button>
+              </div>
             </div>
             <p className="text-lg">{currentQuestion.fra_Text}</p>
           </div>
           
-          <div className="grid gap-6">
-            {classTeachers.map((teacher) => (
-              <div key={teacher.leh_LehrerID} className="p-4 bg-gray-50 rounded-lg">
-                <div className="flex items-center justify-between">
-                  <h4 className="font-medium">
-                    {teacher.leh_Vorname} {teacher.leh_Name}
-                  </h4>
-                  <div className="flex items-center gap-4">
-                    <StarRating
-                      value={!getAnswerForQuestionAndTeacher(currentQuestion.fra_FrageID, teacher.leh_LehrerID)?.noAnswer ? 
-                        getAnswerForQuestionAndTeacher(currentQuestion.fra_FrageID, teacher.leh_LehrerID)?.rating || 0 : 0}
-                      onChange={(rating) => handleRatingChange(currentQuestion.fra_FrageID, teacher.leh_LehrerID, rating)}
-                      disabled={getAnswerForQuestionAndTeacher(currentQuestion.fra_FrageID, teacher.leh_LehrerID)?.noAnswer}
-                    />
-                    <Button
-                      variant={getAnswerForQuestionAndTeacher(currentQuestion.fra_FrageID, teacher.leh_LehrerID)?.noAnswer ? "default" : "outline"}
-                      onClick={() => handleNoAnswer(currentQuestion.fra_FrageID, teacher.leh_LehrerID)}
-                      className="whitespace-nowrap"
-                    >
-                      Keine Angabe
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+          {renderQuestionContent()}
         </div>
 
-        <div className="flex justify-between mt-8">
+        <div className="flex justify-start mt-8">
           <Button
             variant="outline"
             onClick={handlePrevious}
             disabled={currentPage === 0}
           >
             Zurück
-          </Button>
-          <Button
-            onClick={handleNext}
-          >
-            {currentPage === totalPages - 1 ? 'Abschließen' : 'Weiter'}
           </Button>
         </div>
       </Card>

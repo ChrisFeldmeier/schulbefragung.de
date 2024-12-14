@@ -1,8 +1,29 @@
+'use client'
+
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { Avatar, AvatarFallback, AvatarImage } from "./avatar"
 import { Bell } from "lucide-react"
+import { cn } from "@/lib/utils"
 
 export function NavBar() {
+  const pathname = usePathname()
+
+  const isActive = (path: string) => {
+    if (path === '/dashboard') {
+      return pathname === '/dashboard'
+    }
+    return pathname?.startsWith(path)
+  }
+
+  const navigationLinks = [
+    { href: '/dashboard', label: 'Dashboard' },
+    { href: '/dashboard/befragung', label: 'Befragung' },
+    { href: '/dashboard/abteilungen', label: 'Abteilungen' },
+    { href: '/dashboard/betriebe', label: 'Betriebe' },
+    { href: '/dashboard/auswertungen', label: 'Auswertungen' },
+  ]
+
   return (
     <nav className="border-b bg-white">
       <div className="flex h-16 items-center px-4 max-w-[1200px] mx-auto">
@@ -13,42 +34,18 @@ export function NavBar() {
         </Link>
         
         <div className="flex gap-6 flex-1">
-          <Link 
-            href="/dashboard" 
-            className="text-sm font-medium transition-colors hover:text-primary"
-          >
-            Dashboard
-          </Link>
-          <Link 
-            href="/dashboard/befragung" 
-            className="text-sm font-medium transition-colors hover:text-primary"
-          >
-            Befragung
-          </Link>
-          <Link 
-            href="/dashboard/abteilungen" 
-            className="text-sm font-medium text-blue-600"
-          >
-            Abteilungen
-          </Link>
-          <Link 
-            href="/dashboard/betriebe" 
-            className="text-sm font-medium transition-colors hover:text-primary"
-          >
-            Betriebe
-          </Link>
-          <Link 
-            href="/dashboard/bewertungen" 
-            className="text-sm font-medium transition-colors hover:text-primary"
-          >
-            Bewertungen
-          </Link>
-          <Link 
-            href="/dashboard/auswertungen" 
-            className="text-sm font-medium transition-colors hover:text-primary"
-          >
-            Auswertungen
-          </Link>
+          {navigationLinks.map((link) => (
+            <Link 
+              key={link.href}
+              href={link.href} 
+              className={cn(
+                "text-sm font-medium transition-colors hover:text-primary",
+                isActive(link.href) && "text-blue-600"
+              )}
+            >
+              {link.label}
+            </Link>
+          ))}
         </div>
 
         <div className="flex items-center gap-4">
