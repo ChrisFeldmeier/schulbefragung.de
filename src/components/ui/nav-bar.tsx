@@ -20,6 +20,12 @@ export function NavBar() {
             Dashboard
           </Link>
           <Link 
+            href="/dashboard/befragung" 
+            className="text-sm font-medium transition-colors hover:text-primary"
+          >
+            Befragung
+          </Link>
+          <Link 
             href="/dashboard/abteilungen" 
             className="text-sm font-medium text-blue-600"
           >

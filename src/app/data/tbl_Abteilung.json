@@ -1,0 +1,64 @@
+{
+    "resource":[
+       {
+          "abt_AbteilungID":1,
+          "abt_Bezeichnung":"Metall I",
+          "abt_Kurzbezeichnung":"Metall1"
+       },
+       {
+          "abt_AbteilungID":2,
+          "abt_Bezeichnung":"Metall II",
+          "abt_Kurzbezeichnung":"Metall2"
+       },
+       {
+          "abt_AbteilungID":3,
+          "abt_Bezeichnung":"Kfz",
+          "abt_Kurzbezeichnung":"Kfz"
+       },
+       {
+          "abt_AbteilungID":4,
+          "abt_Bezeichnung":"Elektro",
+          "abt_Kurzbezeichnung":"Elektro"
+       },
+       {
+          "abt_AbteilungID":5,
+          "abt_Bezeichnung":"IT",
+          "abt_Kurzbezeichnung":"IT"
+       },
+       {
+          "abt_AbteilungID":6,
+          "abt_Bezeichnung":"Friseure",
+          "abt_Kurzbezeichnung":"Friseure"
+       },
+       {
+          "abt_AbteilungID":7,
+          "abt_Bezeichnung":"Ern\u00e4hrung I / Gastronomie",
+          "abt_Kurzbezeichnung":"Ernaehrung1"
+       },
+       {
+          "abt_AbteilungID":8,
+          "abt_Bezeichnung":"Ern\u00e4hrung II / Metzger / Metzgereiverkauf",
+          "abt_Kurzbezeichnung":"Ernaehrung2"
+       },
+       {
+          "abt_AbteilungID":10,
+          "abt_Bezeichnung":"Landwirtschaft",
+          "abt_Kurzbezeichnung":"Landwirtschaft"
+       },
+       {
+          "abt_AbteilungID":11,
+          "abt_Bezeichnung":"JoA",
+          "abt_Kurzbezeichnung":"JoA"
+       },
+       {
+          "abt_AbteilungID":12,
+          "abt_Bezeichnung":"Fachschule",
+          "abt_Kurzbezeichnung":"Fachschule"
+       },
+       {
+          "abt_AbteilungID":13,
+          "abt_Bezeichnung":"Metall IV",
+          "abt_Kurzbezeichnung":"Metall4"
+       }
+    ]
+ }

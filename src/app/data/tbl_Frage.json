@@ -1,0 +1,894 @@
+{
+    "resource":[
+       {
+          "fra_FrageID":158,
+          "fra_Nr":1,
+          "fra_NrID":1,
+          "fra_Text":"Der Lehrer setzt verschiedene Methoden ein, um den Unterricht abwechslungsreich zu gestalten.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":2,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":159,
+          "fra_Nr":2,
+          "fra_NrID":2,
+          "fra_Text":"Ich kann im Unterricht meine beruflichen Erfahrungen einbringen.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":2,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":160,
+          "fra_Nr":3,
+          "fra_NrID":3,
+          "fra_Text":"Wenn ich etwas nicht verstehe, geht der Lehrer noch einmal darauf ein.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":2,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":161,
+          "fra_Nr":4,
+          "fra_NrID":4,
+          "fra_Text":"Im Unterricht bleibt uns gen\u00fcgend Zeit zum \u00dcben.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":278,
+          "fra_Nr":5,
+          "fra_NrID":5,
+          "fra_Text":"Der Lehrer unterrichtet mit praxisbezogenen Beispielen.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":2,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":163,
+          "fra_Nr":6,
+          "fra_NrID":6,
+          "fra_Text":"Der Unterricht ist logisch aufgebaut.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":2,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":164,
+          "fra_Nr":7,
+          "fra_NrID":7,
+          "fra_Text":"Die Unterrichtsmaterialien (Arbeitsbl\u00e4tter, Folien, Tafelanschriften, ...) sind klar und verst\u00e4ndlich gestaltet. ",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":2,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":165,
+          "fra_Nr":8,
+          "fra_NrID":8,
+          "fra_Text":"Die Benotung ist gerecht und nachvollziehbar.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":2,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":166,
+          "fra_Nr":9,
+          "fra_NrID":9,
+          "fra_Text":"Bei Schul- und Stegreifaufgaben wird abgefragt, was im Unterricht behandelt wurde.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":2,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":167,
+          "fra_Nr":10,
+          "fra_NrID":10,
+          "fra_Text":"Der Lehrer korrigiert die Schul- und Stegreifaufgaben in einer angemessenen Zeit.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":2,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":168,
+          "fra_Nr":11,
+          "fra_NrID":11,
+          "fra_Text":"In Vertretungsstunden wird stets Unterricht erteilt.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":169,
+          "fra_Nr":12,
+          "fra_NrID":12,
+          "fra_Text":"Der Lehrer fordert angemessenes Verhalten (in Bezug auf P\u00fcnktlichkeit, Unterrichtsst\u00f6rungen, Handy, Flaschen, ...) im Unterricht ein.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":2,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":170,
+          "fra_Nr":13,
+          "fra_NrID":13,
+          "fra_Text":"Der Lehrer unterrichtet mit aktuellen Beispielen.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":2,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":171,
+          "fra_Nr":14,
+          "fra_NrID":14,
+          "fra_Text":"Die Lehrer leiten uns dazu an, uns auch gegenseitig etwas zu erkl\u00e4ren.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":2,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":172,
+          "fra_Nr":15,
+          "fra_NrID":15,
+          "fra_Text":"Der Lehrer kennt sich in seinem Fachgebiet gut aus.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":2,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":173,
+          "fra_Nr":16,
+          "fra_NrID":16,
+          "fra_Text":"Der Lehrer geht mit den Sch\u00fclern respektvoll um.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":2,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":174,
+          "fra_Nr":17,
+          "fra_NrID":17,
+          "fra_Text":"Wenn mich am Lehrer etwas st\u00f6rt, dann kann ich ihm das offen sagen.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":2,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":175,
+          "fra_Nr":18,
+          "fra_NrID":18,
+          "fra_Text":"Der Lehrer legt Wert auf Sauberkeit und Ordnung im Klassenzimmer.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":2,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":176,
+          "fra_Nr":19,
+          "fra_NrID":19,
+          "fra_Text":"Der Lehrer ist Vorbild in allen Bereichen, z. B. P\u00fcnktlichkeit, Sprache, Kleidung, Auftreten, Anwesenheit im Unterricht.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":2,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":177,
+          "fra_Nr":20,
+          "fra_NrID":20,
+          "fra_Text":"Sch\u00fcler, die ausf\u00e4llige Bemerkungen (Beschimpfungen, Beleidigungen, Fluchen) machen, werden vom Lehrer zurechtgewiesen. ",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":2,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":178,
+          "fra_Nr":21,
+          "fra_NrID":21,
+          "fra_Text":"Was ich in der Schule lerne, ist bedeutsam f\u00fcr meinen Beruf.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":179,
+          "fra_Nr":22,
+          "fra_NrID":22,
+          "fra_Text":"Die Lernmittel (Computer, Programme, Ger\u00e4te, ...) sind f\u00fcr den Unterricht einsatzbereit und funktionieren.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":180,
+          "fra_Nr":23,
+          "fra_NrID":23,
+          "fra_Text":"Am Morgen finde ich das Schulgeb\u00e4ude (Klassenr\u00e4ume, G\u00e4nge, Toiletten, ... ) in einem sauberen Zustand vor.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":181,
+          "fra_Nr":24,
+          "fra_NrID":24,
+          "fra_Text":"In den Aufenthaltsbereichen f\u00fchle ich mich wohl.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":182,
+          "fra_Nr":25,
+          "fra_NrID":25,
+          "fra_Text":"Ich f\u00fchle mich f\u00fcr mein Umfeld (Arbeitsplatz, Toiletten, Schulgel\u00e4nde, \u2026) mitverantwortlich.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":183,
+          "fra_Nr":26,
+          "fra_NrID":26,
+          "fra_Text":"Wenn ich einen Mangel, z.B. defekte Ger\u00e4te, Besch\u00e4digungen, \u2026 feststelle, melde ich diesen umgehend.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":283,
+          "fra_Nr":36,
+          "fra_NrID":36,
+          "fra_Text":"F\u00fchrungskraft sein, hei\u00dft Vorbild sein: Herr Weidenbeck wird diesem Anspruch gerecht",
+          "fra_sichtbar":false,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":false
+       },
+       {
+          "fra_FrageID":185,
+          "fra_Nr":27,
+          "fra_NrID":27,
+          "fra_Text":"An der Schule ist eine ausreichende Zahl von Parkpl\u00e4tzen vorhanden.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":186,
+          "fra_Nr":28,
+          "fra_NrID":28,
+          "fra_Text":"\u00dcber die Berufsschule \u00e4u\u00dfere ich mich in meinem Umfeld positiv.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":187,
+          "fra_Nr":29,
+          "fra_NrID":29,
+          "fra_Text":"F\u00fcr Sch\u00fcler mit Ausbildungsbetrieb: In meinem Betrieb hat die Berufsschule einen guten Ruf (Image). ",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":188,
+          "fra_Nr":30,
+          "fra_NrID":30,
+          "fra_Text":"Ich habe den Eindruck, Betrieb und Schule arbeiten gut zusammen.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":189,
+          "fra_Nr":31,
+          "fra_NrID":31,
+          "fra_Text":"Ich bin mit dem zus\u00e4tzlichen Lehrangebot (F\u00f6rderunterricht, Wahlf\u00e4cher, Zusatzkurse, Wettbewerbe, ...) an unserer Schule zufrieden.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":190,
+          "fra_Nr":32,
+          "fra_NrID":32,
+          "fra_Text":"An unserer Schule wird auf Umwelterziehung, z.B. M\u00fclltrennung, Energieeinsparung, ... wert gelegt.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":191,
+          "fra_Nr":33,
+          "fra_NrID":33,
+          "fra_Text":"Wir gehen in der Klasse miteinander respektvoll um.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":1,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":284,
+          "fra_Nr":37,
+          "fra_NrID":37,
+          "fra_Text":"F\u00fchrungskraft sein, hei\u00dft Vorbild sein: Herr Heider wird diesem Anspruch gerecht",
+          "fra_sichtbar":false,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":false
+       },
+       {
+          "fra_FrageID":285,
+          "fra_Nr":38,
+          "fra_NrID":38,
+          "fra_Text":"F\u00fchrungskraft sein, hei\u00dft Vorbild sein: Frau Ruhhammer wird diesem Anspruch gerecht",
+          "fra_sichtbar":false,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":false
+       },
+       {
+          "fra_FrageID":286,
+          "fra_Nr":39,
+          "fra_NrID":39,
+          "fra_Text":"F\u00fchrungskraft sein, hei\u00dft Vorbild sein: Herr Plankl wird diesem Anspruch gerecht",
+          "fra_sichtbar":false,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":false
+       },
+       {
+          "fra_FrageID":195,
+          "fra_Nr":1,
+          "fra_NrID":1,
+          "fra_Text":"Im Unterricht gebe ich den Sch\u00fclern gen\u00fcgend Zeit zum \u00dcben.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":287,
+          "fra_Nr":40,
+          "fra_NrID":40,
+          "fra_Text":"F\u00fchrungskraft sein, hei\u00dft Vorbild sein: Herr Dr. Bucher wird diesem Anspruch gerecht",
+          "fra_sichtbar":false,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":false
+       },
+       {
+          "fra_FrageID":288,
+          "fra_Nr":41,
+          "fra_NrID":41,
+          "fra_Text":"F\u00fchrungskraft sein, hei\u00dft Vorbild sein: Herr H\u00f6lzl wird diesem Anspruch gerecht",
+          "fra_sichtbar":false,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":false
+       },
+       {
+          "fra_FrageID":198,
+          "fra_Nr":2,
+          "fra_NrID":2,
+          "fra_Text":"Meine Kollegen/innen halten sich an gemeinsam getroffene Absprachen.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":199,
+          "fra_Nr":3,
+          "fra_NrID":3,
+          "fra_Text":"In unserem Arbeitsbereich arbeiten die Kolleginnen und Kollegen bei Bedarf eng zusammen.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":204,
+          "fra_Nr":4,
+          "fra_NrID":4,
+          "fra_Text":"Es stehen ausreichend Lernmittel (z. B. B\u00fccher, Materialien, Folien, Modelle, Zeitschriften, \u2026) zur Verf\u00fcgung, um den aktuellen Praxisbezug im Unterricht zu sichern.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":206,
+          "fra_Nr":5,
+          "fra_NrID":5,
+          "fra_Text":"In meiner Abteilung wird bei Vertretungen auf eine ausgewogene Belastung der Kollegen/innen geachtet.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":207,
+          "fra_Nr":6,
+          "fra_NrID":6,
+          "fra_Text":"Pers\u00f6nliche Anliegen werden bei der Stundenplangestaltung ber\u00fccksichtigt.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":208,
+          "fra_Nr":7,
+          "fra_NrID":7,
+          "fra_Text":"Mit der F\u00e4cherzuweisung und Klassenzuteilung bin ich zufrieden.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":211,
+          "fra_Nr":8,
+          "fra_NrID":8,
+          "fra_Text":"Ich lege im Unterricht Wert auf Umwelterziehung.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":212,
+          "fra_Nr":9,
+          "fra_NrID":9,
+          "fra_Text":"Ich bin mit den Umgangsformen meiner Sch\u00fcler zufrieden.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":213,
+          "fra_Nr":10,
+          "fra_NrID":10,
+          "fra_Text":"Die Ausbildungsbetriebe unterst\u00fctzen mich bei der Erf\u00fcllung meines Erziehungsauftrags.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":214,
+          "fra_Nr":11,
+          "fra_NrID":11,
+          "fra_Text":"Die Erziehungsberechtigen unterst\u00fctzen mich bei der Erf\u00fcllung meines Erziehungsauftrags.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":215,
+          "fra_Nr":12,
+          "fra_NrID":12,
+          "fra_Text":"Konflikte werden bei uns offen und konstruktiv ausgetragen.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":216,
+          "fra_Nr":13,
+          "fra_NrID":13,
+          "fra_Text":"An unserer Schule wird die Aufsicht gerecht geregelt.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":219,
+          "fra_Nr":14,
+          "fra_NrID":14,
+          "fra_Text":"Bei der Einf\u00fchrung neuer Ger\u00e4te und Programme werde ich ausreichend unterwiesen.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":220,
+          "fra_Nr":15,
+          "fra_NrID":15,
+          "fra_Text":"Die Lernmittel (Computer, Programme, Ger\u00e4te, ...) sind f\u00fcr den Unterricht einsatzbereit und funktionieren.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":221,
+          "fra_Nr":16,
+          "fra_NrID":16,
+          "fra_Text":"F\u00fcr neu an die Schule gekommene Kollegen/innen: Ich bin mit der Unterst\u00fctzung w\u00e4hrend meiner Einarbeitungsphase zufrieden.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":222,
+          "fra_Nr":17,
+          "fra_NrID":17,
+          "fra_Text":"Ich habe den Eindruck, unsere Schule wird von au\u00dfen positiv wahrgenommen.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":223,
+          "fra_Nr":18,
+          "fra_NrID":18,
+          "fra_Text":"Meine W\u00fcnsche hinsichtlich der Ausstattung der Schule werden ber\u00fccksichtigt.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":224,
+          "fra_Nr":19,
+          "fra_NrID":19,
+          "fra_Text":"Bei der Bew\u00e4ltigung meiner Verwaltungsaufgaben werde ich vom Sekretariat/Kanzlei unterst\u00fctzt.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":240,
+          "fra_Nr":20,
+          "fra_NrID":20,
+          "fra_Text":"Die Schulleitung nimmt ihre Organisationsaufgaben zu meiner Zufriedenheit wahr.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":241,
+          "fra_Nr":21,
+          "fra_NrID":21,
+          "fra_Text":"Meine Leistungen werden von der Schulleitung wahrgenommen.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":242,
+          "fra_Nr":22,
+          "fra_NrID":22,
+          "fra_Text":"Meine Leistungen werden von der Abteilungsleitung wahrgenommen.",
+          "fra_sichtbar":false,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":false
+       },
+       {
+          "fra_FrageID":244,
+          "fra_Nr":23,
+          "fra_NrID":23,
+          "fra_Text":"Die F\u00fchrungskr\u00e4fte unterst\u00fctzen mich in meiner beruflichen Weiterentwicklung.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":247,
+          "fra_Nr":24,
+          "fra_NrID":24,
+          "fra_Text":"Die Schulleitung ist f\u00fcr meine Ideen offen und unterst\u00fctzt die Umsetzung.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":248,
+          "fra_Nr":25,
+          "fra_NrID":25,
+          "fra_Text":"Die Abteilungsleiter sind f\u00fcr meine Ideen offen und unterst\u00fctzen die Umsetzung.",
+          "fra_sichtbar":false,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":false
+       },
+       {
+          "fra_FrageID":249,
+          "fra_Nr":26,
+          "fra_NrID":26,
+          "fra_Text":"Die Fachbetreuung Praxis ist f\u00fcr meine Ideen offen und unterst\u00fctzt die Umsetzung.",
+          "fra_sichtbar":false,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":false
+       },
+       {
+          "fra_FrageID":250,
+          "fra_Nr":27,
+          "fra_NrID":27,
+          "fra_Text":"Die Fachbetreuung f\u00fcr allgemeinbildende F\u00e4cher ist f\u00fcr meine Ideen offen und unterst\u00fctzt die Umsetzung.",
+          "fra_sichtbar":false,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":false
+       },
+       {
+          "fra_FrageID":252,
+          "fra_Nr":28,
+          "fra_NrID":28,
+          "fra_Text":"Die Fachbetreuung f\u00fcr Religion ist f\u00fcr meine Ideen offen und unterst\u00fctzt die Umsetzung.",
+          "fra_sichtbar":false,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":false
+       },
+       {
+          "fra_FrageID":253,
+          "fra_Nr":29,
+          "fra_NrID":29,
+          "fra_Text":"Mit der Kommunikation zwischen der Abteilungsleitung und mir bin ich zufrieden.",
+          "fra_sichtbar":false,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":false
+       },
+       {
+          "fra_FrageID":254,
+          "fra_Nr":30,
+          "fra_NrID":30,
+          "fra_Text":"Mit der Kommunikation zwischen der Schulleitung und mir bin ich zufrieden.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":255,
+          "fra_Nr":31,
+          "fra_NrID":31,
+          "fra_Text":"Mein Abteilungsleiter hat im Mitarbeitergespr\u00e4ch klar und deutlich kommuniziert, was er von mir erwartet.",
+          "fra_sichtbar":false,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":false
+       },
+       {
+          "fra_FrageID":256,
+          "fra_Nr":32,
+          "fra_NrID":32,
+          "fra_Text":"Mein Abteilungsleiter kann aktiv zuh\u00f6ren und nimmt sowohl mich als Person als auch meine Anliegen und Vorschl\u00e4ge ernst.",
+          "fra_sichtbar":false,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":false
+       },
+       {
+          "fra_FrageID":258,
+          "fra_Nr":33,
+          "fra_NrID":33,
+          "fra_Text":"Nur Abteilungsleiter: Der Schulleiter hat im Mitarbeitergespr\u00e4ch klar und deutlich kommuniziert, was er von mir erwartet.",
+          "fra_sichtbar":false,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":false
+       },
+       {
+          "fra_FrageID":259,
+          "fra_Nr":34,
+          "fra_NrID":34,
+          "fra_Text":"Nur Abteilungsleiter: Der Schulleiter kann im Mitarbeitergespr\u00e4ch aktiv zuh\u00f6ren und nimmt sowohl mich als Person als auch meine Anliegen und Vorschl\u00e4ge ernst.",
+          "fra_sichtbar":false,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":false
+       },
+       {
+          "fra_FrageID":262,
+          "fra_Nr":35,
+          "fra_NrID":35,
+          "fra_Text":"Insgesamt betrachtet f\u00fchle ich mich in meiner Schule wohl.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":2,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":276,
+          "fra_Nr":14,
+          "fra_NrID":14,
+          "fra_Text":"Nach meiner Erfahrung ber\u00fccksichtigt die Berufsschule die Anliegen unseres Ausbildungsbetriebes.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":3,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":277,
+          "fra_Nr":15,
+          "fra_NrID":15,
+          "fra_Text":"Insgesamt bin ich mit der Berufsschule zufrieden.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":3,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":263,
+          "fra_Nr":1,
+          "fra_NrID":1,
+          "fra_Text":"Ich habe den Eindruck, dass meine Auszubildenden die notwendige F\u00f6rderung im Unterricht bekommen, um die Inhalte optimal verstehen und bearbeiten zu k\u00f6nnen.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":3,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":264,
+          "fra_Nr":2,
+          "fra_NrID":2,
+          "fra_Text":"Ich wei\u00df, an wen ich mich in der Berufsschule wenden kann, wenn ich ein Anliegen habe.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":3,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":265,
+          "fra_Nr":3,
+          "fra_NrID":3,
+          "fra_Text":"Ich habe die M\u00f6glichkeit, mich \u00fcber den Leistungsstand der Auszubildenden, ihre Fehlzeiten, u. \u00e4. zu informieren.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":3,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":266,
+          "fra_Nr":4,
+          "fra_NrID":4,
+          "fra_Text":"Die Auszubildenden meines Betriebes werden durch den Unterricht u.a. auch gut f\u00fcr die Abschlusspr\u00fcfungen vorbereitet.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":3,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":267,
+          "fra_Nr":5,
+          "fra_NrID":5,
+          "fra_Text":"Ich habe den Eindruck, dass die Berufsschule Verbesserungsvorschl\u00e4gen aufgeschlossen gegen\u00fcber steht.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":3,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":268,
+          "fra_Nr":6,
+          "fra_NrID":6,
+          "fra_Text":"Ich habe die M\u00f6glichkeit, Absprachen in erzieherischen Angelegenheiten mit den Lehrkr\u00e4ften zu treffen.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":3,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":269,
+          "fra_Nr":7,
+          "fra_NrID":7,
+          "fra_Text":"Der Unterricht an der Berufsschule f\u00f6rdert die Bildung von Schl\u00fcsselqualifikationen (Teamf\u00e4hikeit, Kommunikationsf\u00e4higkeit, Sozialkompetenz, ...) f\u00fcr das Berufsleben.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":3,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":270,
+          "fra_Nr":8,
+          "fra_NrID":8,
+          "fra_Text":"Ich habe den Eindruck, dass die Schule aktuelles und praxisbezogenes Wissen vermittelt.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":3,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":271,
+          "fra_Nr":9,
+          "fra_NrID":9,
+          "fra_Text":"Die Berufsschule hat in unserem Ausbildungsbetrieb einen guten Ruf.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":3,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":272,
+          "fra_Nr":10,
+          "fra_NrID":10,
+          "fra_Text":"Die Lehrkr\u00e4fte der Berufsschule  nehmen bei Bedarf Kontakt zu unserem Ausbildungsbetrieb auf.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":3,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":273,
+          "fra_Nr":11,
+          "fra_NrID":11,
+          "fra_Text":"Alle wichtigen Informationen, die ich zur Abstimmung von schulischen und betrieblichen Belangen brauche, finden sich auf der Homepage der Berufsschule.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":3,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":274,
+          "fra_Nr":12,
+          "fra_NrID":12,
+          "fra_Text":"Die Schule wird in der \u00d6ffentlichkeit positiv dargestellt.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":3,
+          "fra_aufAbt_sichtbar":true
+       },
+       {
+          "fra_FrageID":275,
+          "fra_Nr":13,
+          "fra_NrID":13,
+          "fra_Text":"Ich habe den Eindruck, dass in der Berufsschule grundlegende Arbeitshaltungen (z.B. P\u00fcnktlichkeit, Zuverl\u00e4ssigkeit) vermittelt werden.",
+          "fra_sichtbar":true,
+          "frar_FrageArtID":1,
+          "frt_FrageTypID":3,
+          "fra_aufAbt_sichtbar":true
+       }
+    ]
+ }
