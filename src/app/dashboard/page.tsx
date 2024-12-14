@@ -6,7 +6,7 @@ import { QuickStats } from "@/components/dashboard/quick-stats"
 
 export default function DashboardPage() {
   return (
-    <div className="p-6 space-y-6">
+    <div className="mx-auto max-w-7xl p-6 space-y-6">
       <div className="flex justify-between items-center">
         <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
         <div className="flex items-center gap-4">
