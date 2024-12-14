@@ -20,7 +20,6 @@ export function NavBar() {
     { href: '/dashboard', label: 'Dashboard' },
     { href: '/dashboard/befragung', label: 'Befragung' },
     { href: '/dashboard/abteilungen', label: 'Abteilungen' },
-    { href: '/dashboard/betriebe', label: 'Betriebe' },
     { href: '/dashboard/auswertungen', label: 'Auswertungen' },
   ]
 
