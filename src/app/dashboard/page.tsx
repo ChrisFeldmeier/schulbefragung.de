@@ -3,6 +3,9 @@ import { DepartmentOverview } from "@/components/dashboard/department-overview"
 import { SatisfactionTrends } from "@/components/dashboard/satisfaction-trends"
 import { TeacherStats } from "@/components/dashboard/teacher-stats"
 import { QuickStats } from "@/components/dashboard/quick-stats"
+import { CategorySatisfaction } from "@/components/dashboard/category-satisfaction"
+import { FacilityFeedback } from "@/components/dashboard/facility-feedback"
+import { BusinessRelations } from "@/components/dashboard/business-relations"
 
 export default function DashboardPage() {
   return (
@@ -20,19 +23,39 @@ export default function DashboardPage() {
 
       <QuickStats />
 
+      {/* First row - 2 columns */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <Card className="p-6">
+          <h2 className="text-lg font-semibold mb-4">Zufriedenheit nach Kategorien</h2>
+          <CategorySatisfaction />
+        </Card>
+
         <Card className="p-6">
           <h2 className="text-lg font-semibold mb-4">Abteilungszufriedenheit</h2>
           <DepartmentOverview />
         </Card>
+      </div>
+
+      {/* Second row - 2 columns */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <Card className="p-6">
+          <h2 className="text-lg font-semibold mb-4">Entwicklung über Zeit</h2>
+          <SatisfactionTrends />
+        </Card>
 
         <Card className="p-6">
-          <h2 className="text-lg font-semibold mb-4">Zufriedenheitstrends</h2>
-          <SatisfactionTrends />
+          <h2 className="text-lg font-semibold mb-4">Beziehung zu Ausbildungsbetrieben</h2>
+          <BusinessRelations />
         </Card>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {/* Third row - 2 columns */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <Card className="p-6">
+          <h2 className="text-lg font-semibold mb-4">Einrichtung & Ressourcen</h2>
+          <FacilityFeedback />
+        </Card>
+
         <Card className="p-6">
           <h2 className="text-lg font-semibold mb-4">Lehrerstatistiken</h2>
           <TeacherStats />
